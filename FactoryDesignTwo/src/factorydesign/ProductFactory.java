@@ -9,8 +9,8 @@ public class ProductFactory {
        try{
            String serialNumber = generateSerialNumber();
            return (IProduct) Class.forName(productType.getProductClassName())
-                                  .getConstructor(String.class)
-                                  .newInstance(serialNumber);
+                                                      .getConstructor(String.class)
+                                                      .newInstance(serialNumber);
        }catch(Exception e){
            throw e;
        }
