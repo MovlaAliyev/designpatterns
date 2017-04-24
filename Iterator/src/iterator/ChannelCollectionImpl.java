@@ -15,8 +15,6 @@ public class ChannelCollectionImpl implements ChannelCollection{
         channelList = new ArrayList();
     }
     
-    
-    
     @Override
     public void addChannel(Channel c) {
       this.channelList.add(c);
