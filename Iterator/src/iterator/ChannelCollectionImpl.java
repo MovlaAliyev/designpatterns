@@ -41,9 +41,6 @@ public class ChannelCollectionImpl implements ChannelCollection{
             this.channels = channels;
         }
         
-        
-        
-        
         @Override
         public boolean hasNext() {
             while(position < channels.size()){
